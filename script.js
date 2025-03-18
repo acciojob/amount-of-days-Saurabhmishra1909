@@ -16,15 +16,10 @@ function year(n) {
 }
 
 // Take input from the user
-rl.question('Enter a year: ', (input) => {
-  const n = parseInt(input); // Convert input to an integer
-
-  if (isNaN(n)) {
-    console.log('Invalid input. Please enter a valid year.');
-  } else {
-    const days = year(n); // Call the function
-    console.log(`The year ${n} has ${days} days.`);
-  }
+rl.question(' ', (input) => {
+const n = parseInt(input); // Convert input to an integer
+const days = year(n); // Call the function
+console.log(`${days}`);
 
   rl.close(); // Close the readline interface
 });
